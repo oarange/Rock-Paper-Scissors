@@ -19,8 +19,10 @@
        
       function playerSelection () { 
          let playerchoice = prompt (" Pick Between Rock Paper and Scissors")
-         playerchoice = playerchoice.toLowerCase
-         return playerchoice
+         let playerchoiceI = playerchoice.toLowerCase()
+         
+         return playerchoiceI
+        
       }
 
       function playRound (playerSelection, computerSelection) {
@@ -48,7 +50,7 @@
           else 
             console.log ("what happened here ")
           }
-     
+              
              playRound(playerSelection(), computerPlay())
     </script>
 </body>
