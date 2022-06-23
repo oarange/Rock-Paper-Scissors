@@ -7,52 +7,21 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <script> 
-      console.log ("hello world")
-      
-      function computerPlay ( ) {
-        const choice =  ["rock", "paper", "scissors"];
-      let choices = choice[Math.floor(Math.random()*choice.length)];
-        return choices 
-        console.log (choices) 
-      }
-       
-      function playerSelection () { 
-         let playerchoice = prompt (" Pick Between Rock Paper and Scissors")
-         let playerchoiceI = playerchoice.toLowerCase()
-         
-         return playerchoiceI
-        
-      }
+  <div class="header"> 
+  <h1> Rock Paper Scissors</h1>
+  </div>
+  <div> Pick your weapon</div>
+  <div> first to five </div>
+  
+  <div> </div>
+  <div></div>
 
-      function playRound (playerSelection, computerSelection) {
-          if (playerSelection ==  computerSelection ){
-          console.log("you draw")
-          } 
-          else if (playerSelection == "paper" && computerSelection == "scissors") {
-            console.log ("computer wins")
-          }
-          else if (playerSelection == "rock" && computerSelection == "paper") {
-            console.log ("computer wins")
-          }
-          else if (playerSelection == "scissors" && computerSelection == "rock") {
-            console.log ("computer wins")
-          }
-          else if (playerSelection == "paper" && computerSelection == "rock") {
-            console.log ("you win")
-          }
-          else if (playerSelection == "scissors" && computerSelection == "paper") {
-            console.log ("you win")
-          }
-          else if (playerSelection == "rock" && computerSelection == "scissors") {
-            console.log ("you win")
-          }
-          else 
-            console.log ("what happened here ")
-          }
-          for (let i = 0; i < 5; i++) {
-             playRound(playerSelection(), computerPlay())
-          }
-    </script>
+  <div></div>
+  <div></div>
+
+  <button>rock</button>
+  <button>paper </button>
+  <button>Scissors</button>
+  <script src="rps.js"> </script>      
 </body>
 </html>
