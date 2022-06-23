@@ -24,11 +24,40 @@ body {
 
 .button {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding-right: 16px;
 }
 
 .container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#player-score {
+    border-style: solid;
+    border-radius: 8px;
+}
+#computer-score {
+    border: 5px solid;
+    border-radius: 8px;
+}
+
+button {
+    height: 25px;
+    width: 100px;
+    margin-right: 16px;
+}
+
+.container-r {
+    display: flex;
+    justify-content: center ;
+}
+
+#result-text {
+   display: flex;
+   align-items:  center;
+    border: 5px solid;
+    border-radius: 8px;
+    
 }
