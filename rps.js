@@ -40,6 +40,4 @@ console.log ("hello world")
           else 
             console.log ("what happened here ")
           }
-          for (let i = 0; i < 5; i++) {
-            playRound(playerSelection(), computerPlay())
-         }
+         
