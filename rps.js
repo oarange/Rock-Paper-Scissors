@@ -3,6 +3,8 @@
     const playerScoreDisplay = document.querySelector ('#player-score')
     const computerScoreDisplay =document.querySelector('#computer-score')
     const resultsDisplay = document.querySelector('#results-text')
+    const resetBtn = document.querySelector('#restart')
+  
 
     function computerPlay ( ) {
         const choice =  ["rock", "paper", "scissors"];
@@ -10,6 +12,8 @@
         return choices 
         
       }
+
+      resetBtn.addEventListener('click',() => location.reload());
 
       
       
@@ -35,6 +39,7 @@
      
      function gameOver () {
       if (playerScore === 5 || computerScore === 5)
+      location.reload();
       resultsDisplay.textContent = 'game over'
      }
      
